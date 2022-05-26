@@ -148,31 +148,7 @@
         <div class="text">test</div>
     </section>
 
-    <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
 
-
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
-    
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-        
-    }
-});
-    </script>
 <!------------------------------------------>
 
     <!--
@@ -207,7 +183,7 @@ modeSwitch.addEventListener("click" , () =>{
     <a>Universidad Politécnica Territorial de Maracaibo, Ubicado en la Urb La Floresta, Av. 86 (Principal) entre calle 79H y 79E, telf. (Central) 58-0261-7546175 o 7549996, Fax 58-0261-7540321. controldeestudios@iutm.edu.ve.</a>
     </footer> -->
 
-    
+    <script src="funct.js"></script>
 </body>
 
 </html>
