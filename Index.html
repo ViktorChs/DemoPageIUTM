@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>IUTM Control de Estudio</title>
+</head>
+
+<body>
+    <main>
+        <section class="parallax">
+            <div class="Fch">
+                <img class="bandera item" src="/Venezuela.png" alt="...">
+                <div class="hr-start item">
+
+                    <p class="slogan">Gobierno <strong>Bolivariano</strong> de Venezuela</p>
+                </div>
+                <div class="hr-start item" id="hr-center">
+                    <p>Ministerio del Poder Popular para <strong>Educacion Universitaria</strong></p>
+                </div>
+            </div>
+            <div class="inicio">
+                <img src="/Logo.png" alt="...">
+                <h1>Universidad Politecnica Territorial de <strong>Maracaibo</strong></h1>
+            </div>
+        </section>
+        <section class="content">
+            ...
+        </section>
+    </main>
+<!--             --------------------->
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">CONTROL DE ESTUDIO </span>
+                    <span class="profession">Maracaibo</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+
+               
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Estudiantes PNF</span>
+                        </a><!--En contruccion-->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Censo</span>
+                        </a><!--Censo Nuevo ingreso / Modificar Censo / planilla de Censo-->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Docentes PNF</span>
+                        </a><!--Iniciar Sesion / Recuperar contraseña-->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Malla Disponibles</span>
+                        </a><!-- PNF en Administracion/PNF en construccion civil/PNF en informatica/PNF en agroalimentacion/PNF en materiales/PNF engeociencias /PNF en contaduria publica/-->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Informacion sobre </span>
+                        </a>  <!-- Requisitos /  horarios / Docentes / comentarios-->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Pre-Inscripciones y listado  </span>
+                        </a>  <!-- Pre-inscripciones/ planilla de preinscritos/ lista de preinscritos/ lista de asignados OPSU/ Preinscripcion Sucre-->
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Otras Opciones</span>
+                        </a><!--Docentes/ estudiantes registrados -->
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    <section class="home">
+        <div class="text">test</div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+<!------------------------------------------>
+
+    <!--
+        
+    <section class="noticias">
+        <div class="title-content"><a>CRONOGRAMA ACADÉMICO</a></div>
+        <div class="title-inicio">
+            <div class="notice-card">PREINSCRIPCIONES NUEVO INGRESO Desde el 16/05/22 Hasta el 16/08/2022 (Por Pagina
+                Web)</div>
+            <div class="notice-card">INSCRIPCIONES DEL PERÍODO ACADÉMICO 2021-2022 FECHA: Desde el 06/06/2022 hasta el
+                10/06/2022</div>
+            <div class="notice-card">INICIO DE ACTIVIDADES (PER) :FECHA: Desde el 13/05/2022 hasta el 31/05/2022
+            </div>
+            <div class="notice-card">Se invita a los GRADUADOS de TSU de MISION SUCRE a retomar sus estudios académicos
+                y continuar con su carrera para así obtener los titulos de: Ingenieros y Licenciados, para graduados de
+                cualquier año. FECHA : Desde el 06/06/2022 hasta el 16/09/2022
+            </div>
+            <div class="notice-card">INICIO DE ACTIVIDADES ACADÉMICAS NUEVO INGRESO: FECHA: 12/09/2022
+            </div>
+            <div class="notice-card">INICIO DE ACTIVIDADES ACADÉMICAS :Todos los trayectos + Reincorporación Trimestre I
+                (Regulares y Paralelos) FECHA: 13/06/2022
+            </div>
+            <div class="notice-card">INSCRIPCIONES DE NUEVO INGRESO :FECHA: Desde el 18/07/2022 hasta el 29/07/2022
+            </div>
+            <div class="notice-card">REINCORPORACIONES(Todos Los Trayectos) Desde el 16/05/2022 hasta el 13/06/2022(Por
+                Taquilla)
+            </div>
+        </div>
+    </section>
+
+     <footer>
+    <a>Universidad Politécnica Territorial de Maracaibo, Ubicado en la Urb La Floresta, Av. 86 (Principal) entre calle 79H y 79E, telf. (Central) 58-0261-7546175 o 7549996, Fax 58-0261-7540321. controldeestudios@iutm.edu.ve.</a>
+    </footer> -->
+
+    
+</body>
+
+</html>
